@@ -1,0 +1,136 @@
+.navigation
+    display: flex
+    width: 100vw
+    height: 10vh
+    font-family: 'Work Sans', sans-serif
+
+// Left element
+.navElement01
+    display: flex
+    align-items: center
+    height: 10vh
+    width: 40vw
+
+.navElement01 a
+    text-decoration: none
+    color: black
+
+.navElement01 h1
+    font-size: 1.4em
+    font-weight: bold
+    margin-left: 1vh
+
+.navElement01 h1 span
+    margin-left: 1vh
+    font-size: .5em
+    font-weight: normal
+
+.navDot
+    width: 3.5vh
+    height: 3.5vh
+    border-radius: 25%
+    background-color: rgb(238,163 ,2 )
+    margin-left: 3vh
+
+// Right element
+.navElement02
+    position: relative
+    display: flex
+    justify-content: right
+    align-items: center
+    height: 10vh
+    width: 60vw
+
+.navLinksContainer
+    margin-right: 5vh
+
+.navLinks
+    font-size: 1.2em
+    text-decoration: none
+    color: black
+    transition: .2s
+
+.hamburgerMenu
+    display: none
+
+.navLinks:nth-child(2)
+    border-left: 1px solid black
+    border-right: 1px solid black
+    margin: 0 1vh
+    padding: 0 1vh
+
+.navLinks:hover
+    color: rgb(238,163 ,2 )
+
+// Media queries
+@media ( max-width: 320px)
+    .navigation
+        height: 10vh
+    .navLinks
+        display: none
+
+    .hamburgerMenu
+        display: block
+
+    .navElement01
+        height: 10vh
+        width: 80vh
+
+    .navElement02
+        height: 10vh
+        width: 20vh
+
+@media (min-width: 321px) and (max-width: 480px)
+    .navigation
+        display: flex
+        justify-content: space-between
+        height: 10vh
+    .navLinks
+        display: none
+
+    .hamburgerMenu
+        display: block
+
+    .navElement01
+        height: 10vh
+        width: 80vh
+
+    .navElement02
+        height: 10vh
+        width: 20vh
+
+@media (min-width: 481px) and (max-width: 768px)
+    .navigation
+        display: flex
+        justify-content: space-between
+        height: 10vh
+    .navLinks
+        display: none
+
+    .hamburgerMenu
+        display: block
+
+    .navElement01
+        height: 10vh
+        width: 80vh
+
+    .navElement02
+        height: 10vh
+        width: 20vh
+
+@media (min-width: 769px) and (max-width: 1024px)
+    .navigation
+        display: flex
+        justify-content: space-between
+        height: 10vh
+
+    .navElement01
+        height: 10vh
+        width: 80vh
+
+    .navElement02
+        height: 10vh
+        width: 20vh
+
+    .navLinksContainer
+        display: flex
