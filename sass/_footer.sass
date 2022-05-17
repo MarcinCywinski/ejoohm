@@ -1,16 +1,49 @@
 // Main Page
 .footElement
-    margin: 3vh auto
-    padding: 2vh 0
+    margin: 0 auto
     width: 90%
-    height: 10vh
+    height: 8vh
 
 .footElement:nth-child(1)
     border-top: 1px solid black
 
-.footElement h2
-    font-size: 1em
-
 .footElement a
     text-decoration: none
     color: black
+
+.footerCrights p
+    line-height: 8vh
+
+// Media Queries
+@media ( min-width: 481px )
+    .footElement
+        height: 8vh
+        margin-bottom: 1vh
+
+    .footElement h2
+        line-height: 1em
+
+    .footerCrights p
+        line-height: 8vh
+
+@media ( min-width: 769px )
+    .footElement
+        height: 5vh
+        margin: 1vh auto
+        padding-top: 1vh
+
+    .footElement h2
+        line-height: 1em
+
+    .footerCrights p
+        line-height: 4vh
+
+@media ( min-width: 1201px )
+    .footerContainer
+        display: flex
+        margin: 0 auto
+        width: 90%
+        border-top: 1px solid black
+
+    .footElement:nth-child(1)
+        border-top: none

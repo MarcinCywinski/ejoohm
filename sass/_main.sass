@@ -154,3 +154,95 @@ button.submitBtn:hover
 
 .resumeSection h3, .workPlace
     padding-bottom: 3vh
+
+// Media Queries
+@media ( min-width: 481px )
+    .facePic
+        height: 50vh
+
+    .mainElement01hello h1
+        font-size: 3em
+
+    .mainElement01Text p
+        font-size: 1em
+        line-height: 1.5em
+
+    .mainElement01Links a
+        font-size: 1.2em
+
+    .resumeSection
+        width: 90%
+        margin: 0 auto
+
+@media ( min-width: 769px )
+    .mainElement01
+        min-height: 40vh
+
+    .mainElement02
+        min-height: 40vh
+
+    .facePic
+        height: 45vh
+
+    .roundlink
+        width: 13vh
+        height: 13vh
+        line-height: 13vh
+
+    .resumeheader
+        height: 5vh
+
+    .projectHeader
+        height: 5vh
+
+@media ( min-width: 1201px )
+    main
+        display: flex
+        width: 90%
+        min-height: 80vh
+        margin: 0 auto
+
+    .mainElement01, .mainElement02
+        position: relative
+        width: 50%
+        height: 80vh
+
+    .facePic
+        height: 50vh
+        position: absolute
+        top: calc( 50% - 25vh )
+        left: 10vh
+
+    .element01container
+        position: absolute
+        top: calc( 50% - 25vh )
+        right: 10vh
+        width: 50vh
+        height: 50vh
+
+    .roundlink
+        width: 13vh
+        height: 13vh
+        line-height: 13vh
+
+    .mainResume
+        display: flex
+        flex-direction: column
+
+    .mainProjects
+        display: flex
+        flex-wrap: wrap
+
+    .projectHeader
+        width: 100vw
+
+    .projectElement01, .projectElement02
+        margin-top: 5vh
+        margin-bottom: 5vh
+        height: 30vh
+
+    .contactElement01
+        text-align: center
+
+    .contactElement02 .contact-form
+        margin-top: 5vh
