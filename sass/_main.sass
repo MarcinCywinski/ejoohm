@@ -5,6 +5,24 @@ main
 .mainElement01
     min-height: 60vh
 
+.sentElement01
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 80vh
+    width: 100%
+
+.sentElement01 img
+    display: block
+    height: 50vh
+    animation: rotation 8s infinite linear
+
+@keyframes rotation
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
 .mainElement02
     min-height: 60vh
 
@@ -154,6 +172,15 @@ button.submitBtn:hover
 
 .resumeSection h3, .workPlace
     padding-bottom: 3vh
+
+// MessageSent
+    .messageSent
+        height: 60vh
+        width: 100%
+
+    .mandalaPic
+        display: block
+        height: 20vh
 
 // Media Queries
 @media ( min-width: 481px )
